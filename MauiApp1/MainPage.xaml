@@ -2,6 +2,59 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.MainPage">
+<ScrollView>
+    
+        <VerticalStackLayout>
+            
+            <Label Style="{StaticResource Title}" Text="Tu bedzie Zdjecie z logiem quizu o przyrodzie"/>
+
+            <Label Style="{StaticResource Start}" Text="Zacznij"/>
+            <!--
+            
+                Pytanie do quizu na nawej stronie
+            
+                <Label Style="{StaticResource Question}" Text="Pytanie"/>
+            
+                <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="200"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="200"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Style="{StaticResource Anwser1}" Grid.Row="0" Grid.Column="0" Text="Odpowiedz 1"/>
+                <Button Style="{StaticResource Anwser2}" Grid.Row="0" Grid.Column="1" Text="Odpowiedz 1"/>
+                <Button Style="{StaticResource Anwser3}" Grid.Row="1" Grid.Column="0" Text="Odpowiedz 1"/>
+                <Button Style="{StaticResource Anwser4}" Grid.Row="1" Grid.Column="1" Text="Odpowiedz 1"/>
+
+
+                </Grid>
+            --> 
+            
+           <!--         
+                
+                Nazwa graczy
+            
+               <Label Style="{StaticResource Players}" Text="Gracz 1"/>
+               <Entry Style="{StaticResource PlayersEntry}" Placeholder="Wprowadz nazwe gracza 1"/>
+
+               <Label Style="{StaticResource Players}" Text="Gracz 2"/>
+               <Entry Style="{StaticResource PlayersEntry}" Placeholder="Wprowadz nazwe gracza 2"/>
+            -->
+           
+
+
+            
+        
+    </VerticalStackLayout>
+        
+       
+    
+</ScrollView>
 
   
 
