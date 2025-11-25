@@ -7,6 +7,9 @@
         <VerticalStackLayout>
             
             <Label Style="{StaticResource Title}" Text="Tu bedzie Zdjecie z logiem quizu o przyrodzie"/>
+            <Button Clicked="Button_Clicked" Text="Odp o id 0" CommandParameter="0"></Button>
+            <Button Clicked="Button_Clicked" Text="Odp o id 1" CommandParameter="1"></Button>
+            <Button Clicked="Button_Clicked" Text="Odp o id 2" CommandParameter="2"></Button>
 
             <Label Style="{StaticResource Start}" Text="Zacznij"/>
             <!--

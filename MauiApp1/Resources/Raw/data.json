@@ -1,0 +1,63 @@
+[
+  {
+    "Question": "Po co roślinom liście?",
+    "Answers": [
+      "Do fotosyntezy",
+      "Do wyglądu",
+      "Do pobierania ciepła",
+      "Do niczego"
+    ],
+    "CorrectAnswerId": 1
+  },
+  {
+    "Question": "Co to jest fotosynteza?",
+    "Answers": [
+      "Proces wzrostu rośliny",
+      "Proces kwitnięcia",
+      "Gatunek rośliny",
+      "Produkcja pokarmu"
+    ],
+    "CorrectAnswerId": 4
+  },
+  {
+    "Question": "Jakie zwierze jest największe na świecie?",
+    "Answers": [
+      "Słoń afrykański",
+      "Żyrafa",
+      "Płetwal błękitny",
+      "Goryl"
+    ],
+    "CorrectAnswerId": 3
+  },
+  {
+    "Question": "Jakie drzewo rodzi żółędzie?",
+    "Answers": [
+      "Sosna",
+      "Dąb",
+      "Brzoza",
+      "Jodła"
+    ],
+    "CorrectAnswerId": 2
+  },
+  {
+    "Question": "Ile nóg ma pająk?",
+    "Answers": [
+      "6",
+      "4",
+      "8",
+      "10"
+    ],
+    "CorrectAnswerId": 3
+  },
+  {
+    "Question": "Które zwierze jest największe?",
+    "Answers": [
+      "Lew",
+      "Gepard",
+      "Jaguar",
+      "Tygrys"
+    ],
+    "CorrectAnswerId": 4
+  }
+
+]
