@@ -1,64 +1,141 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiApp1.MainPage">
-<ScrollView>
-    
-        <VerticalStackLayout>
-            
-            <Label Style="{StaticResource Title}" Text="Tu bedzie Zdjecie z logiem quizu o przyrodzie"/>
-            <Button Clicked="Button_Clicked" Text="Odp o id 0" CommandParameter="0"></Button>
-            <Button Clicked="Button_Clicked" Text="Odp o id 1" CommandParameter="1"></Button>
-            <Button Clicked="Button_Clicked" Text="Odp o id 2" CommandParameter="2"></Button>
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiApp1.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="#0F172A">
 
-            <Label Style="{StaticResource Start}" Text="Zacznij"/>
-            <!--
-            
-                Pytanie do quizu na nawej stronie
-            
-                <Label Style="{StaticResource Question}" Text="Pytanie"/>
-            
-                <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="200"/>
-                    <RowDefinition Height="200"/>
-                </Grid.RowDefinitions>
+    <Grid RowDefinitions="Auto, *, Auto"
+          Padding="20">
 
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="200"/>
-                    <ColumnDefinition Width="200"/>
-                </Grid.ColumnDefinitions>
+        <Frame Grid.Row="0"
+               BackgroundColor="#1E293B"
+               CornerRadius="28"
+               Padding="20"
+               Margin="0,0,0,15">
 
-                <Button Style="{StaticResource Anwser1}" Grid.Row="0" Grid.Column="0" Text="Odpowiedz 1"/>
-                <Button Style="{StaticResource Anwser2}" Grid.Row="0" Grid.Column="1" Text="Odpowiedz 1"/>
-                <Button Style="{StaticResource Anwser3}" Grid.Row="1" Grid.Column="0" Text="Odpowiedz 1"/>
-                <Button Style="{StaticResource Anwser4}" Grid.Row="1" Grid.Column="1" Text="Odpowiedz 1"/>
+            <Grid ColumnDefinitions="*,Auto">
+                <Label Text="QUIZ "
+                       FontSize="26"
+                       FontAttributes="Bold"
+                       TextColor="#38BDF8"
+                       VerticalTextAlignment="Center"/>
 
+                <Frame Grid.Column="1"
+                       BackgroundColor="#0F172A"
+                       CornerRadius="20"
+                       Padding="10,5">
+                    <Label Text="TURA: GRACZ 1"
+                           TextColor="White"
+                           FontSize="14"/>
+                </Frame>
+            </Grid>
+        </Frame>
 
+        <VerticalStackLayout Grid.Row="1"
+                             Spacing="20">
+
+            <Frame BackgroundColor="#020617"
+                   CornerRadius="22"
+                   Padding="15">
+
+                <Grid ColumnDefinitions="*,Auto,*">
+                    <Label Text="Gracz 1"
+                           HorizontalOptions="Start"
+                           TextColor="#60A5FA"
+                           FontSize="16"/>
+
+                    <Label Grid.Column="1"
+                           Text="0 : 0"
+                           TextColor="White"
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"/>
+
+                    <Label Grid.Column="2"
+                           Text="Gracz 2"
+                           HorizontalOptions="End"
+                           TextColor="#F87171"
+                           FontSize="16"/>
                 </Grid>
-            --> 
-            
-           <!--         
-                
-                Nazwa graczy
-            
-               <Label Style="{StaticResource Players}" Text="Gracz 1"/>
-               <Entry Style="{StaticResource PlayersEntry}" Placeholder="Wprowadz nazwe gracza 1"/>
+            </Frame>
 
-               <Label Style="{StaticResource Players}" Text="Gracz 2"/>
-               <Entry Style="{StaticResource PlayersEntry}" Placeholder="Wprowadz nazwe gracza 2"/>
-            -->
-           
+            <Frame BackgroundColor="#312E81"
+                   CornerRadius="35"
+                   Padding="25"
+                   Margin="0,10">
 
+                <Label Text="TUTAJ POJAWI SIĘ PYTANIE"
+                       FontSize="22"
+                       TextColor="White"
+                       HorizontalTextAlignment="Center"/>
+            </Frame>
 
-            
-        
-    </VerticalStackLayout>
-        
        
-    
-</ScrollView>
+            <Grid RowSpacing="15"
+                  ColumnSpacing="15"
+                  ColumnDefinitions="*,*"
+                  RowDefinitions="Auto,Auto">
 
-  
+                <Frame Grid.Row="0" Grid.Column="0"
+                       BackgroundColor="#2563EB"
+                       CornerRadius="25"
+                       HeightRequest="70">
+                    <Label Text="ODPOWIEDŹ A"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"
+                           TextColor="White"
+                           FontSize="16"/>
+                </Frame>
 
+                <Frame Grid.Row="0" Grid.Column="1"
+                       BackgroundColor="#7C3AED"
+                       CornerRadius="25"
+                       HeightRequest="70">
+                    <Label Text="ODPOWIEDŹ B"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"
+                           TextColor="White"
+                           FontSize="16"/>
+                </Frame>
+
+                <Frame Grid.Row="1" Grid.Column="0"
+                       BackgroundColor="#F59E0B"
+                       CornerRadius="25"
+                       HeightRequest="70">
+                    <Label Text="ODPOWIEDŹ C"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"
+                           TextColor="White"
+                           FontSize="16"/>
+                </Frame>
+
+                <Frame Grid.Row="1" Grid.Column="1"
+                       BackgroundColor="#10B981"
+                       CornerRadius="25"
+                       HeightRequest="70">
+                    <Label Text="ODPOWIEDŹ D"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"
+                           TextColor="White"
+                           FontSize="16"/>
+                </Frame>
+
+            </Grid>
+
+        </VerticalStackLayout>
+
+        <Frame Grid.Row="2"
+               BackgroundColor="#1F2937"
+               CornerRadius="25"
+               Padding="18"
+               Margin="0,15,0,0">
+
+            <Label Text="Kliknij przycisk START aby rozpocząć"
+                   TextColor="#94A3B8"
+                   FontSize="15"
+                   HorizontalTextAlignment="Center"/>
+        </Frame>
+
+    </Grid>
 </ContentPage>
