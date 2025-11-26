@@ -83,7 +83,8 @@
                 <Frame Grid.Row="0" Grid.Column="0"
                        BackgroundColor="#2563EB"
                        CornerRadius="25"
-                       HeightRequest="70">
+                       HeightRequest="70"
+                       Padding="0">
                     <Button Text="ODPOWIEDŹ A"
                            BackgroundColor="#2563EB"
                            TextColor="White"
@@ -97,7 +98,8 @@
                 <Frame Grid.Row="0" Grid.Column="1"
                        BackgroundColor="#7C3AED"
                        CornerRadius="25"
-                       HeightRequest="70">
+                       HeightRequest="70"
+                        Padding="0">
                     <Button Text="ODPOWIEDŹ B"
                            BackgroundColor="#7C3AED"
                            TextColor="White"
@@ -111,7 +113,8 @@
                 <Frame Grid.Row="1" Grid.Column="0"
                        BackgroundColor="#F59E0B"
                        CornerRadius="25"
-                       HeightRequest="70">
+                       HeightRequest="70"
+                        Padding="0">
                     <Button Text="ODPOWIEDŹ C"
                            BackgroundColor="#F59E0B"
                            TextColor="White"
@@ -125,7 +128,8 @@
                 <Frame Grid.Row="1" Grid.Column="1"
                        BackgroundColor="#10B981"
                        CornerRadius="25"
-                       HeightRequest="70">
+                       HeightRequest="70"
+                        Padding="0">
                     <Button Text="ODPOWIEDŹ D"
                            BackgroundColor="#10B981"
                            TextColor="White"
