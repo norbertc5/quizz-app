@@ -144,17 +144,6 @@
 
         </VerticalStackLayout>
 
-        <Frame Grid.Row="2"
-               BackgroundColor="#1F2937"
-               CornerRadius="25"
-               Padding="18"
-               Margin="0,15,0,0">
-
-            <Label Text="Kliknij przycisk START aby rozpocząć"
-                   TextColor="#94A3B8"
-                   FontSize="15"
-                   HorizontalTextAlignment="Center"/>
-        </Frame>
 
     </Grid>
 </ContentPage>

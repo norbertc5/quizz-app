@@ -36,7 +36,7 @@ namespace MauiApp1
             using var reader = new StreamReader(stream);
 
             var contents = reader.ReadToEnd();
-            loadedTasks = JsonSerializer.Deserialize<List<TaskItem>>(contents) ?? loadedTasks; 
+            loadedTasks = JsonSerializer.Deserialize<List<TaskItem>>(contents) ?? loadedTasks;
         }
 
         private void Button_Clicked(object sender, EventArgs e)
@@ -49,7 +49,7 @@ namespace MauiApp1
 
         void NextTurn()
         {
-            if(currentQuestion >= loadedTasks.Count)
+            if (currentQuestion >= loadedTasks.Count)
             {
                 string winner = (player1Score > player2Score) ? "gracz pierwszy" : (player2Score > player1Score) ? "gracz drugi" : "nikt, jest remis";
                 DisplayAlert("Koniec", $"Wykorzystano wszystkie pytania. Wygrywa {winner}.", "Ok");
@@ -66,15 +66,14 @@ namespace MauiApp1
             AnswerButton1.Text = answersTexts[1];
             AnswerButton2.Text = answersTexts[2];
             AnswerButton3.Text = answersTexts[3];
-            //DisplayAlert("info", $"{ questionText}, {answersTexts[0]}, {correctAnserId}", "OK");
         }
 
-        void AnswerHandle(int userAnswerId)
+        async void AnswerHandle(int userAnswerId)
         {
             string message = "";
-            if(userAnswerId == correctAnserId)
+            if (userAnswerId == correctAnserId)
             {
-                if(turn == "p1")
+                if (turn == "p1")
                 {
                     message = "Poprawna odpowiedź. Podaj telefon drugiemu graczowi.";
                     player1Score++;
@@ -100,7 +99,7 @@ namespace MauiApp1
                 DisplayAlert("Źle!", message, "OK");
             }
 
-            if(turn == "p1")
+            if (turn == "p1")
             {
                 turn = "p2";
             }
@@ -116,12 +115,12 @@ namespace MauiApp1
         {
             ScoreLabel.Text = $"{player1Score}:{player2Score}";
         }
-    }
 
-    class TaskItem
-    {
-        public string Question { get; set; }
-        public string[] Answers { get; set; }
-        public int CorrectAnswerId { get; set; }
+        class TaskItem
+        {
+            public string Question { get; set; }
+            public string[] Answers { get; set; }
+            public int CorrectAnswerId { get; set; }
+        }
     }
 }
