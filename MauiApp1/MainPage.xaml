@@ -84,9 +84,8 @@
                        BackgroundColor="#2563EB"
                        CornerRadius="25"
                        HeightRequest="70">
-                    <Label Text="ODPOWIEDŹ A"
-                           HorizontalTextAlignment="Center"
-                           VerticalTextAlignment="Center"
+                    <Button Text="ODPOWIEDŹ A"
+                           BackgroundColor="#2563EB"
                            TextColor="White"
                            FontSize="16"
                            />
@@ -96,9 +95,8 @@
                        BackgroundColor="#7C3AED"
                        CornerRadius="25"
                        HeightRequest="70">
-                    <Label Text="ODPOWIEDŹ B"
-                           HorizontalTextAlignment="Center"
-                           VerticalTextAlignment="Center"
+                    <Button Text="ODPOWIEDŹ B"
+                           BackgroundColor="#7C3AED"
                            TextColor="White"
                            FontSize="16"/>
                 </Frame>
@@ -107,9 +105,8 @@
                        BackgroundColor="#F59E0B"
                        CornerRadius="25"
                        HeightRequest="70">
-                    <Label Text="ODPOWIEDŹ C"
-                           HorizontalTextAlignment="Center"
-                           VerticalTextAlignment="Center"
+                    <Button Text="ODPOWIEDŹ C"
+                           BackgroundColor="#F59E0B"
                            TextColor="White"
                            FontSize="16"/>
                 </Frame>
@@ -118,9 +115,8 @@
                        BackgroundColor="#10B981"
                        CornerRadius="25"
                        HeightRequest="70">
-                    <Label Text="ODPOWIEDŹ D"
-                           HorizontalTextAlignment="Center"
-                           VerticalTextAlignment="Center"
+                    <Button Text="ODPOWIEDŹ D"
+                           BackgroundColor="#10B981"
                            TextColor="White"
                            FontSize="16"/>
                 </Frame>
