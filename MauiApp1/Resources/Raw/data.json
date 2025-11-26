@@ -7,7 +7,7 @@
       "Do pobierania ciepła",
       "Do niczego"
     ],
-    "CorrectAnswerId": 1
+    "CorrectAnswerId": 0
   },
   {
     "Question": "Co to jest fotosynteza?",
@@ -17,7 +17,7 @@
       "Gatunek rośliny",
       "Produkcja pokarmu"
     ],
-    "CorrectAnswerId": 4
+    "CorrectAnswerId": 3
   },
   {
     "Question": "Jakie zwierze jest największe na świecie?",
@@ -27,7 +27,7 @@
       "Płetwal błękitny",
       "Goryl"
     ],
-    "CorrectAnswerId": 3
+    "CorrectAnswerId": 2
   },
   {
     "Question": "Jakie drzewo rodzi żółędzie?",
@@ -37,7 +37,7 @@
       "Brzoza",
       "Jodła"
     ],
-    "CorrectAnswerId": 2
+    "CorrectAnswerId": 1
   },
   {
     "Question": "Ile nóg ma pająk?",
@@ -47,7 +47,7 @@
       "8",
       "10"
     ],
-    "CorrectAnswerId": 3
+    "CorrectAnswerId": 2
   },
   {
     "Question": "Które zwierze jest największe?",
@@ -57,7 +57,7 @@
       "Jaguar",
       "Tygrys"
     ],
-    "CorrectAnswerId": 4
+    "CorrectAnswerId": 3
   }
 
 ]

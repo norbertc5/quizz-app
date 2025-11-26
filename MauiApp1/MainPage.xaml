@@ -88,6 +88,9 @@
                            BackgroundColor="#2563EB"
                            TextColor="White"
                            FontSize="16"
+                            Clicked="Button_Clicked"
+                            CommandParameter="0"
+                            x:Name="AnswerButton0"
                            />
                 </Frame>
 
@@ -98,7 +101,11 @@
                     <Button Text="ODPOWIEDŹ B"
                            BackgroundColor="#7C3AED"
                            TextColor="White"
-                           FontSize="16"/>
+                           FontSize="16"
+                            Clicked="Button_Clicked"
+                            CommandParameter="1"
+                            x:Name="AnswerButton1"
+                            />
                 </Frame>
 
                 <Frame Grid.Row="1" Grid.Column="0"
@@ -108,7 +115,11 @@
                     <Button Text="ODPOWIEDŹ C"
                            BackgroundColor="#F59E0B"
                            TextColor="White"
-                           FontSize="16"/>
+                           FontSize="16"
+                            Clicked="Button_Clicked"
+                            CommandParameter="2"
+                            x:Name="AnswerButton2"
+                            />
                 </Frame>
 
                 <Frame Grid.Row="1" Grid.Column="1"
@@ -118,7 +129,11 @@
                     <Button Text="ODPOWIEDŹ D"
                            BackgroundColor="#10B981"
                            TextColor="White"
-                           FontSize="16"/>
+                           FontSize="16"
+                            Clicked="Button_Clicked"
+                            CommandParameter="3"
+                            x:Name="AnswerButton3"
+                            />
                 </Frame>
 
             </Grid>

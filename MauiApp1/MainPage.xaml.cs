@@ -26,6 +26,8 @@ namespace MauiApp1
         private async void MainPage_Loaded(object? sender, EventArgs e)
         {
             await LoadMauiAsset();
+            NextTurn();
+            TourLabel.Text = $"Tura: {turn}";
         }
 
         async Task LoadMauiAsset()
@@ -58,7 +60,13 @@ namespace MauiApp1
             answersTexts = (string[])loadedTasks[currentQuestion].Answers.Clone();
             correctAnserId = loadedTasks[currentQuestion].CorrectAnswerId;
             currentQuestion++;
-            DisplayAlert("info", $"{ questionText}, {answersTexts[0]}, {correctAnserId}", "OK");
+
+            QuestionLabel.Text = questionText;
+            AnswerButton0.Text = answersTexts[0];
+            AnswerButton1.Text = answersTexts[1];
+            AnswerButton2.Text = answersTexts[2];
+            AnswerButton3.Text = answersTexts[3];
+            //DisplayAlert("info", $"{ questionText}, {answersTexts[0]}, {correctAnserId}", "OK");
         }
 
         void AnswerHandle(int userAnswerId)
@@ -68,25 +76,26 @@ namespace MauiApp1
             {
                 if(turn == "p1")
                 {
-                    message = "Poprawna odpowiedź. Podaj telefon pierwszemu graczowi.";
+                    message = "Poprawna odpowiedź. Podaj telefon drugiemu graczowi.";
                     player1Score++;
                 }
                 else
                 {
-                    message = "Poprawna odpowiedź. Podaj telefon drugiemu graczowi.";
+                    message = "Poprawna odpowiedź. Podaj telefon pierwszemu graczowi.";
                     player2Score++;
                 }
+                UpdateScroe();
                 DisplayAlert("Dobrze!", message, "OK");
             }
             else
             {
                 if (turn == "p1")
                 {
-                    message = "Zła odpowiedź. Podaj telefon pierwszemu graczowi.";
+                    message = "Zła odpowiedź. Podaj telefon drugiemu graczowi.";
                 }
                 else
                 {
-                    message = "Zła odpowiedź. Podaj telefon drugiemu graczowi.";
+                    message = "Zła odpowiedź. Podaj telefon pierwszemu graczowi.";
                 }
                 DisplayAlert("Źle!", message, "OK");
             }
@@ -100,6 +109,12 @@ namespace MauiApp1
                 NextTurn();
                 turn = "p1";
             }
+            TourLabel.Text = $"Tura: {turn}";
+        }
+
+        void UpdateScroe()
+        {
+            ScoreLabel.Text = $"{player1Score}:{player2Score}";
         }
     }
 
